@@ -22,15 +22,52 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 - プリセット使用キャラクター表示
 - 作業状態の JSON バックアップ / 復元
 
-### 使い方
+### 基本的な使い方
 
 1. 上記の Web app を開きます。
 2. `Import Save` から NIGHTREIGN のセーブデータを選択します。
 3. 各タブで遺物を確認し、必要に応じて不要マークを付けます。
-4. `Sale view` / `売却用表示` を使ってゲーム内での売却作業を補助します。
+4. `売却用表示` を使ってゲーム内での売却作業を補助します。
 5. 必要に応じて `Export State` で現在の作業状態を JSON に保存できます。
 
 > 本ツールはセーブデータを直接編集しません。実際の売却操作はゲーム内で行ってください。
+
+### 条件付き上位互換
+
+このタブは、**使用者にとって不要な効果を指定し、その効果を「存在しないもの」として扱った場合に上位互換となる遺物がないかを探す**ための整理補助機能です。
+
+例えば、ある遺物が次の3効果を持っているとします。
+
+- 腐敗状態の敵に対する攻撃を強化＋2
+- 凍傷状態の敵に対する攻撃を強化＋1
+- 魔力攻撃力上昇＋4
+
+このうち前2つを自分のビルドでは使わないと判断した場合、`無視する効果` でその2効果を選択します。すると本ツールは、それらを比較対象から除外し、残った `魔力攻撃力上昇＋4` を基準に、より良い候補が存在しないかをリストアップします。
+
+この機能は「不要な効果が付いているから即売却」と判断するものではありません。**自分のプレイスタイルでは価値がない効果を除外して比較対象を広げ、手作業では見つけにくい整理候補を洗い出すための補助機能**です。
+
+通常遺物は通常遺物同士、深層遺物は深層遺物同士で比較します。深層遺物のデメリット効果は、上位互換判定には使用しません。
+
+### 売却用表示
+
+`売却用表示` は、不要マークを付けた遺物を実際にゲーム内で売却するときの目視作業を補助する画面です。
+
+本ツールはセーブデータを書き換えないため、不要マークを付けてもゲーム内の遺物は削除されません。**最終的な売却は、ゲーム内の遺物売却画面で利用者自身が行います。**
+
+その作業をしやすくするため、売却用表示では次の点をゲーム内の売却画面に合わせています。
+
+- 遺物の並び順
+- グリッドの列構成
+- 色
+- 通常 / 深層の区別
+- メリット効果数に応じたアイコンサイズ
+- フィルタ適用後に対象外を詰める表示
+
+不要マークを付けた遺物だけを強調表示できるため、**ツール側の一覧とゲーム内の売却画面を同じ並びで見比べながら、対象を順番に売却できます。**
+
+さらに、売却対象が含まれる行だけを表示する機能や、前後の売却対象行へジャンプする機能も用意しています。
+
+`プリセット使用（キャラクター名）` は注意表示として出ますが、ツール上では売却不可扱いにはしません。ゲーム内で実際に売却できるかどうかはゲーム側の状態に従ってください。
 
 ### プライバシー / セキュリティ
 
@@ -62,7 +99,7 @@ The app analyzes save data locally in your browser and helps identify exact matc
 - Preset usage indicators
 - JSON work-state backup / restore
 
-### Usage
+### Basic usage
 
 1. Open the Web app linked above.
 2. Use `Import Save` to select your NIGHTREIGN save file.
@@ -71,6 +108,43 @@ The app analyzes save data locally in your browser and helps identify exact matc
 5. Use `Export State` if you want to back up your current work state as JSON.
 
 > This tool does not directly edit save data. Actual selling is performed manually in the game.
+
+### Conditional outclassed
+
+This tab is intended to help find additional outclassed relics by letting you specify **effects that are irrelevant to your own build or playstyle** and temporarily treating those effects as if they did not exist during comparison.
+
+For example, suppose a relic has these three effects:
+
+- Increased attack against Scarlet Rot-afflicted enemies +2
+- Increased attack against Frostbite-afflicted enemies +1
+- Magic attack power up +4
+
+If the first two effects are irrelevant to your build, select them under `Ignored effects`. The tool then excludes those effects from the comparison and searches for relics that outclass the remaining meaningful effect, `Magic attack power up +4`.
+
+This does not mean that every relic containing an ignored effect should automatically be sold. The feature is a **sorting aid that broadens the comparison by removing effects you personally do not value, helping surface candidates that are difficult to spot manually.**
+
+Normal relics are compared only with normal relics, and Deep Relics only with Deep Relics. Negative effects on Deep Relics are not used for the outclassed comparison.
+
+### Sale view
+
+`Sale view` is designed to make the final manual selling process in-game easier after you have marked unwanted relics in the tool.
+
+Because this tool never edits your save data, marking a relic as unwanted does not remove it from the game. **The final sale must still be performed manually on the in-game relic selling screen.**
+
+To make visual matching easier, Sale view mirrors the in-game selling screen as closely as possible, including:
+
+- relic order
+- grid column layout
+- relic color
+- normal / Deep Relic distinction
+- icon size based on the number of positive effects
+- compacted layout after filters are applied
+
+Marked relics can be highlighted, allowing you to **compare the tool and the in-game selling screen in the same order and work through sale targets visually.**
+
+There are also options to show only rows containing sale targets and to jump to the previous or next row containing a sale target.
+
+`Preset use (character)` is shown as a warning indicator only. The tool does not treat preset use itself as unsellable; whether the relic can actually be sold is determined by the game.
 
 ### Privacy / Security
 
