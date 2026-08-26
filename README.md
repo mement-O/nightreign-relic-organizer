@@ -2,7 +2,12 @@
 
 [🇯🇵 日本語](#-日本語) | [🇬🇧 English](#-english)
 
-🌐 Web app: https://mement-o.github.io/nightreign-relic-organizer/
+## 📥 Open / Download
+
+- 🌐 **Web app (recommended):** https://mement-o.github.io/nightreign-relic-organizer/
+- 💾 **Standalone HTML / Offline use:** https://github.com/mement-O/nightreign-relic-organizer/releases/latest
+
+The Web app and standalone HTML use the same local, read-only save analysis. The standalone HTML can be opened directly in a browser for offline use.
 
 ## 🇯🇵 日本語
 
