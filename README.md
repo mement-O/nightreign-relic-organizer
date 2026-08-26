@@ -1,16 +1,16 @@
-# Nightreign Relic Organizer
+# 🌙 Nightreign Relic Organizer
 
-[日本語](#日本語) | [English](#english)
+[🇯🇵 日本語](#-日本語) | [🇬🇧 English](#-english)
 
-Web app: https://mement-o.github.io/nightreign-relic-organizer/
+🌐 Web app: https://mement-o.github.io/nightreign-relic-organizer/
 
-## 日本語
+## 🇯🇵 日本語
 
 ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専用ツールです。
 
 セーブデータをブラウザ内で解析し、遺物の完全一致・上位互換・条件付き上位互換などを確認できます。不要マークや売却用表示、プリセット使用情報の表示、作業状態の JSON エクスポート / インポートにも対応しています。
 
-### 主な特徴
+### ✨ 主な特徴
 
 - セーブデータはブラウザ内でのみ解析
 - セーブデータへの書き込みは行いません
@@ -22,7 +22,7 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 - プリセット使用キャラクター表示
 - 作業状態の JSON バックアップ / 復元
 
-### 基本的な使い方
+### 🖥️ 基本的な使い方
 
 1. 上記の Web app を開きます。
 2. `Import Save` から NIGHTREIGN のセーブデータを選択します。
@@ -32,7 +32,7 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 
 > 本ツールはセーブデータを直接編集しません。実際の売却操作はゲーム内で行ってください。
 
-### 条件付き上位互換
+### 🔍 条件付き上位互換
 
 このタブは、**使用者にとって不要な効果を指定し、その効果を「存在しないもの」として扱った場合に上位互換となる遺物がないかを探す**ための整理補助機能です。
 
@@ -48,7 +48,7 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 
 通常遺物は通常遺物同士、深層遺物は深層遺物同士で比較します。深層遺物のデメリット効果は、上位互換判定には使用しません。
 
-### 売却用表示
+### 🗑️ 売却用表示
 
 `売却用表示` は、不要マークを付けた遺物を実際にゲーム内で売却するときの目視作業を補助する画面です。
 
@@ -69,11 +69,11 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 
 `プリセット使用（キャラクター名）` は注意表示として出ますが、ツール上では売却不可扱いにはしません。ゲーム内で実際に売却できるかどうかはゲーム側の状態に従ってください。
 
-### プライバシー / セキュリティ
+### 🔒 プライバシー / セキュリティ
 
 セーブデータはブラウザ内でのみ処理されます。外部へのアップロード機能はありません。また、公開版 HTML では Content Security Policy によりネットワーク接続 API を禁止しています。
 
-### 注意事項
+### ⚠️ 注意事項
 
 本ツールは FromSoftware / Bandai Namco Entertainment の公式ツールではありません。
 
@@ -81,13 +81,13 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 
 ---
 
-## English
+## 🇬🇧 English
 
 An unofficial, read-only relic organization assistant for ELDEN RING NIGHTREIGN.
 
 The app analyzes save data locally in your browser and helps identify exact matches, outclassed relics, conditional upgrades, marked relics, sale targets, and preset usage. Work state can also be exported to and restored from JSON.
 
-### Features
+### ✨ Features
 
 - Save data is processed only in your browser
 - The app never writes to your save file
@@ -99,7 +99,7 @@ The app analyzes save data locally in your browser and helps identify exact matc
 - Preset usage indicators
 - JSON work-state backup / restore
 
-### Basic usage
+### 🖥️ Basic usage
 
 1. Open the Web app linked above.
 2. Use `Import Save` to select your NIGHTREIGN save file.
@@ -109,7 +109,7 @@ The app analyzes save data locally in your browser and helps identify exact matc
 
 > This tool does not directly edit save data. Actual selling is performed manually in the game.
 
-### Conditional outclassed
+### 🔍 Conditional outclassed
 
 This tab is intended to help find additional outclassed relics by letting you specify **effects that are irrelevant to your own build or playstyle** and temporarily treating those effects as if they did not exist during comparison.
 
@@ -125,7 +125,7 @@ This does not mean that every relic containing an ignored effect should automati
 
 Normal relics are compared only with normal relics, and Deep Relics only with Deep Relics. Negative effects on Deep Relics are not used for the outclassed comparison.
 
-### Sale view
+### 🗑️ Sale view
 
 `Sale view` is designed to make the final manual selling process in-game easier after you have marked unwanted relics in the tool.
 
@@ -146,11 +146,11 @@ There are also options to show only rows containing sale targets and to jump to 
 
 `Preset use (character)` is shown as a warning indicator only. The tool does not treat preset use itself as unsellable; whether the relic can actually be sold is determined by the game.
 
-### Privacy / Security
+### 🔒 Privacy / Security
 
 Save data is processed only in the browser. There is no feature that uploads save data externally. The public HTML also uses Content Security Policy to block network connection APIs.
 
-### Disclaimer
+### ⚠️ Disclaimer
 
 This is an unofficial tool and is not affiliated with or endorsed by FromSoftware or Bandai Namco Entertainment.
 
