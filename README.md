@@ -73,6 +73,18 @@ ELDEN RING NIGHTREIGN の遺物整理を補助する非公式・読み取り専�
 
 セーブデータはブラウザ内でのみ処理されます。外部へのアップロード機能はありません。また、公開版 HTML では Content Security Policy によりネットワーク接続 API を禁止しています。
 
+### 📚 参考情報
+
+本ツールの実装・データ整理にあたり、以下のプロジェクト・情報源を参考にしています。
+
+| Project / Source | 参考にした内容 |
+| --- | --- |
+| [alfizari/Elden-Ring-Nightreign-Save-Editor](https://github.com/alfizari/Elden-Ring-Nightreign-Save-Editor) | セーブデータ構造、遺物・効果パラメータ、日本語名称、Vessel / Preset 構造 |
+| [metinc/nightreign-relic-browser](https://github.com/metinc/nightreign-relic-browser) | EffectGroup / level の整理 |
+| [神攻略Wiki - 遺物効果](https://kamikouryaku.net/nightreign/?%E9%81%BA%E7%89%A9%E5%8A%B9%E6%9E%9C) | ゲーム内の遺物効果カテゴリ分類 |
+
+これらのプロジェクト・情報源を参考にしていますが、Nightreign Relic Organizer は各プロジェクトの公式派生・共同開発プロジェクトではありません。
+
 ### ⚠️ 注意事項
 
 本ツールは FromSoftware / Bandai Namco Entertainment の公式ツールではありません。
@@ -149,6 +161,18 @@ There are also options to show only rows containing sale targets and to jump to 
 ### 🔒 Privacy / Security
 
 Save data is processed only in the browser. There is no feature that uploads save data externally. The public HTML also uses Content Security Policy to block network connection APIs.
+
+### 📚 References
+
+The implementation and data organization of this tool were informed by the following projects and sources.
+
+| Project / Source | Used as reference for |
+| --- | --- |
+| [alfizari/Elden-Ring-Nightreign-Save-Editor](https://github.com/alfizari/Elden-Ring-Nightreign-Save-Editor) | Save data structure, relic/effect parameters, Japanese names, Vessel / Preset structures |
+| [metinc/nightreign-relic-browser](https://github.com/metinc/nightreign-relic-browser) | EffectGroup / level organization |
+| [神攻略Wiki - Relic Effects](https://kamikouryaku.net/nightreign/?%E9%81%BA%E7%89%A9%E5%8A%B9%E6%9E%9C) | In-game relic effect category classification |
+
+These projects and sources were used as references. Nightreign Relic Organizer is not an official derivative of, or jointly developed with, any of them.
 
 ### ⚠️ Disclaimer
 
